@@ -1,0 +1,20 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+mat-card {
+  max-width: 100%; /* Cambia esto */
+  margin-left: auto; /* Alinea el mat-card en el centro */
+  margin-right: auto; /* Alinea el mat-card en el centro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente en la columna */
+  justify-content: center; /* Centra los elementos verticalmente en la columna */
+}
+
+.example-full-width textarea.matInput {
+  height: 100px;
+  width: 100%;
+}

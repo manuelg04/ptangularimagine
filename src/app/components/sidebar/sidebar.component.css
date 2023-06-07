@@ -1,0 +1,29 @@
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin-bottom: 20px;
+}
+
+.pages {
+  margin-bottom: 20px;
+}
+
+.sidebar, .rightbar {
+  flex: 1 0 auto; /* Permite que estos elementos crezcan y se encojan, pero no encojan más allá de su tamaño automático */
+}
+
+.profile-image {
+  width: 80px; /* Ajusta estos valores a tu gusto */
+  height: 80px;
+  border-radius: 50%; /* Esto hace que la imagen sea redonda */
+  object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio, cortándose si es necesario */
+  margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+}

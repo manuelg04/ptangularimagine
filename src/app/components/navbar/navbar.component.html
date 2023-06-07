@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>LinkedIn Clon</span>
+    <span class="navbar-items">
+      <button mat-button [matMenuTriggerFor]="myProfile">Mi Perfil</button>
+      <mat-menu #myProfile="matMenu">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Manuel Gonzalez</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Ocupación: Desarrollador de software</p>
+            <p>Edad: 25 años</p>
+            <p>Deporte favorito: Tenis</p>
+            <p>Comida favorita: Pizza</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="myNetwork">Mi Red</button>
+      <mat-menu #myNetwork="matMenu">
+        <div *ngFor="let contact of contacts">
+          <p>{{contact.name}} - {{contact.job}}</p>
+          <button mat-raised-button color="primary">Agregar</button>
+        </div>
+      </mat-menu>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>

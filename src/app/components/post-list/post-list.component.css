@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+mat-card {
+  margin: 20px 0;
+  width: 80%; /* puedes ajustar este valor a tu gusto */
+  max-width: 600px; /* puedes ajustar este valor a tu gusto */
+}

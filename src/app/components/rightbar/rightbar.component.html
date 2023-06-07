@@ -1,0 +1,16 @@
+
+<div class="rightbar">
+  <div class="feed">
+    <h2>Añadir a tu feed</h2>
+    <div class="contact" *ngFor="let contact of contacts">
+      <p>{{contact.name}} es {{contact.job}}</p>
+      <button *ngIf="!contact.following" mat-raised-button color="primary" (click)="toggleFollow(contact)">Seguir</button>
+  <button *ngIf="contact.following" mat-raised-button color="primary" (click)="toggleFollow(contact)">Siguiendo!</button>
+  <button *ngIf="contact.following" mat-raised-button color="warn" (click)="toggleFollow(contact)">Dejar de seguir</button>
+    </div>
+  </div>
+  <div class="courses">
+    <h2>Los cursos más vistos hoy</h2>
+    <p *ngFor="let course of courses">{{course}}</p>
+  </div>
+</div>
